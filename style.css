@@ -17,7 +17,7 @@
   width: 90%;
   margin: 0 auto;
 }
-.price-container{
+.price-container {
   max-width: 1200px;
   width: 60%;
   margin: 0 auto;
@@ -118,20 +118,55 @@ h3 {
 /* Meet the speaker section end */
 
 /* Price section style*/
-.price-top{
+.price-top {
   text-align: center;
   margin: 40px 0;
+}
+.price-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 20px;
+}
+.price-card-container div {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin: 0 0 50px 0;
+  padding: 30px;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 2;
+  li::marker {
+    color: blue;
+  }
   
 }
-.price-card-container{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      justify-content: space-between;
+.price-card-container div p{
+  color: #888888;
 }
-.price-card-container div{
-      width: 200px;
-      height: 200px;
-      background-color: aqua;
+.price-card-container div hr{
+  border: 0.5px solid   #E5E7EB;
+  
+}
+.price-card-container div ul li{
+  color: #333333;
+}
+.price-card-container .card-2{
+  background-color: #0D1B2A;
+
+}
+.price-card-container .card-2  ul li{
+  color: #FFFFFF;
+  
+}
+.price-card-container .card-2 h1{
+  color:  #FFFFFF;
+}
+.price-card-container .card-2 p:first-of-type{
+  color: #93C5FD;
+}
+.price-card-container .card-3{
+  background-color: #F8F9FB;
 }
 
 /* price section end */
