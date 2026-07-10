@@ -12,8 +12,18 @@
   padding: 12px 50px;
   cursor: pointer;
 }
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.price-container{
+  max-width: 1200px;
+  width: 60%;
+  margin: 0 auto;
+}
 
-/* Connaon style */
+/* Common style end */
 /* Navber style */
 nav {
   display: flex;
@@ -66,8 +76,62 @@ header div h1 {
 /* Hero section end */
 
 /* Meet the speaker section css */
-.speakers-sectin{
-  
+.speakers-section {
+  margin: 60px auto;
+  text-align: center;
+}
+.speakers-section h2 {
+  margin-bottom: 20px;
+}
+.speaker-section-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.speaker-section-card div {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+.speaker-section-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-content {
+  padding: 10px;
+}
+.speaker-section-card p,
+h3 {
+  padding: 5px 0px 5px 20px;
+}
+.speaker-section-card p:first-of-type {
+  color: blue;
+  font-size: 12px;
+}
+.speaker-section-card p:nth-of-type(2) {
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 /* Meet the speaker section end */
+
+/* Price section style*/
+.price-top{
+  text-align: center;
+  margin: 40px 0;
+  
+}
+.price-card-container{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: space-between;
+}
+.price-card-container div{
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+}
+
+/* price section end */
