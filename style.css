@@ -140,52 +140,61 @@ h3 {
   li::marker {
     color: blue;
   }
-  
 }
-.price-card-container div p{
+.price-card-container div p {
   color: #888888;
 }
-.price-card-container div hr{
-  border: 0.5px solid   #E5E7EB;
-  
+.price-card-container div hr {
+  border: 0.5px solid #e5e7eb;
 }
-.price-card-container div ul li{
+.price-card-container div ul li {
   color: #333333;
 }
-.price-card-container .card-2{
-  background-color: #0D1B2A;
-
+.price-card-container .card-2 {
+  background-color: #0d1b2a;
 }
-.price-card-container .card-2  ul li{
-  color: #FFFFFF;
-  
+.price-card-container .card-2 ul li {
+  color: #ffffff;
 }
-.price-card-container .card-2 h1{
-  color:  #FFFFFF;
+.price-card-container .card-2 h1 {
+  color: #ffffff;
 }
-.price-card-container .card-2 p:first-of-type{
-  color: #93C5FD;
+.price-card-container .card-2 p:first-of-type {
+  color: #93c5fd;
 }
-.price-card-container .card-3{
-  background-color: #F8F9FB;
+.price-card-container .card-3 {
+  background-color: #f8f9fb;
+}
+.price-card-container > div:nth-child(1) .common-btn {
+  background-color: transparent;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+.price-card-container > div:nth-child(3) .common-btn {
+  background-color: transparent;
+  color: #0d1b2a;
+  border: 1px solid #0d1b2a;
 }
 
 /* price section end */
 
-
-
- /* --- Job Board Section Styles --- */
+/* --- Job Board Section Styles --- */
 .job-board-section {
   padding: 80px 24px;
   background-color: #ffffff;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
 }
 
 .job-board-section .section-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 .job-board-section .section-header {
   text-align: center;
@@ -208,13 +217,11 @@ h3 {
   line-height: 1.6;
 }
 
-
 .job-board-section .job-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
-
 
 .job-board-section .job-card {
   background-color: #ffffff;
@@ -223,15 +230,20 @@ h3 {
   padding: 28px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
 .job-board-section .job-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.04);
 }
-
 
 .job-board-section .card-header {
   display: flex;
@@ -239,7 +251,6 @@ h3 {
   align-items: flex-start;
   margin-bottom: 24px;
 }
-
 
 .job-board-section .track-badge {
   font-size: 0.75rem;
@@ -249,10 +260,18 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-.job-board-section .badge-frontend { background-color: #eff6ff; color: #2563eb; }
-.job-board-section .badge-ai { background-color: #f3e8ff; color: #7c3aed; }
-.job-board-section .badge-devops { background-color: #ecfdf5; color: #059669; }
-
+.job-board-section .badge-frontend {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+.job-board-section .badge-ai {
+  background-color: #f3e8ff;
+  color: #7c3aed;
+}
+.job-board-section .badge-devops {
+  background-color: #ecfdf5;
+  color: #059669;
+}
 
 .job-board-section .company-logo-wrapper {
   width: 48px;
@@ -263,9 +282,18 @@ h3 {
   justify-content: center;
 }
 
-.job-board-section .logo-frontend { background-color: #f8fafc; color: #0f172a; }
-.job-board-section .logo-ai { background-color: #f0fdf4; color: #15803d; }
-.job-board-section .logo-devops { background-color: #eff6ff; color: #1e40af; }
+.job-board-section .logo-frontend {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+.job-board-section .logo-ai {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+.job-board-section .logo-devops {
+  background-color: #eff6ff;
+  color: #1e40af;
+}
 
 /* Card Content Details */
 .job-board-section .card-body {
@@ -343,7 +371,9 @@ h3 {
   border-radius: 8px;
   text-decoration: none;
   box-sizing: border-box;
-  transition: background-color 0.15s ease, transform 0.1s ease;
+  transition:
+    background-color 0.15s ease,
+    transform 0.1s ease;
 }
 
 .job-board-section .btn-apply:hover {
@@ -375,54 +405,47 @@ h3 {
   }
 }
 
-
-
-
 /* Job board section end*/
 
 /* Footer style */
-footer{
-  background-color: #0D1B2A;
+footer {
+  background-color: #0d1b2a;
   color: whitesmoke;
   padding: 40px;
 }
-.footer-top{
-display: flex;
-justify-content: space-between;
-align-items: center;
-
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 footer hr {
-    border: none;
-    height: 2px;
-    background-color: #666;
-    margin: 40px 0;
-    width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #666;
+  margin: 40px 0;
+  width: 100%;
 }
-.social-media-links{
+.social-media-links {
   display: flex;
   gap: 30px;
 }
-.social-media-links a{
+.social-media-links a {
   list-style: none;
   text-decoration: none;
   color: white;
 }
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  
 }
-.footer-bottom-rightside{
+.footer-bottom-rightside {
   display: flex;
   gap: 20px;
- 
-  
 }
-.footer-bottom-rightside a{
-  color: #FFFFFF;
-  
+.footer-bottom-rightside a {
+  color: #ffffff;
+
   text-decoration: none;
 }
 /* Footer end */
