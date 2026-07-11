@@ -171,6 +171,214 @@ h3 {
 
 /* price section end */
 
+
+
+ /* --- Job Board Section Styles --- */
+.job-board-section {
+  padding: 80px 24px;
+  background-color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.job-board-section .section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.job-board-section .section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.job-board-section .section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.025em;
+}
+
+.job-board-section .section-header p {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+.job-board-section .job-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+
+.job-board-section .job-card {
+  background-color: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.job-board-section .job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+}
+
+
+.job-board-section .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+
+.job-board-section .track-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+.job-board-section .badge-frontend { background-color: #eff6ff; color: #2563eb; }
+.job-board-section .badge-ai { background-color: #f3e8ff; color: #7c3aed; }
+.job-board-section .badge-devops { background-color: #ecfdf5; color: #059669; }
+
+
+.job-board-section .company-logo-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-board-section .logo-frontend { background-color: #f8fafc; color: #0f172a; }
+.job-board-section .logo-ai { background-color: #f0fdf4; color: #15803d; }
+.job-board-section .logo-devops { background-color: #eff6ff; color: #1e40af; }
+
+/* Card Content Details */
+.job-board-section .card-body {
+  flex-grow: 1;
+}
+
+.job-board-section .job-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 6px 0;
+  line-height: 1.4;
+}
+
+.job-board-section .company-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #64748b;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Clean Metadata Icons & Typography */
+.job-board-section .job-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.job-board-section .meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.job-board-section .meta-item svg {
+  color: #94a3b8;
+}
+
+/* Capsule-style Tech Stack Badges */
+.job-board-section .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.job-board-section .tech-badge {
+  font-size: 0.815rem;
+  font-weight: 500;
+  color: #475569;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+/* Royal Blue CTA Button Layout & Hover States */
+.job-board-section .card-footer {
+  margin-top: auto;
+}
+
+.job-board-section .btn-apply {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.job-board-section .btn-apply:hover {
+  background-color: #1d4ed8;
+}
+
+.job-board-section .btn-apply:active {
+  transform: scale(0.98);
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 1024px) {
+  .job-board-section .job-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .job-board-section {
+    padding: 60px 16px;
+  }
+  .job-board-section .section-header h2 {
+    font-size: 2rem;
+  }
+  .job-board-section .job-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+
+
+
+/* Job board section end*/
+
 /* Footer style */
 footer{
   background-color: #0D1B2A;
